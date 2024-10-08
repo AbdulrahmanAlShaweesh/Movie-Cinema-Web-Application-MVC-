@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CinemaMovieWebApplication.Migrations
 {
     [DbContext(typeof(MovieCinemaDbContext))]
-    [Migration("20241008124804_CinemasMigration")]
-    partial class CinemasMigration
+    [Migration("20241008140114_ProducerMigration")]
+    partial class ProducerMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -195,7 +195,7 @@ namespace CinemaMovieWebApplication.Migrations
 
                     b.HasIndex("ProducersId");
 
-                    b.ToTable("MovieModel");
+                    b.ToTable("Movies");
                 });
 
             modelBuilder.Entity("CinemaMovieWebApplication.Models.Entities.ProducerModel", b =>
@@ -221,7 +221,7 @@ namespace CinemaMovieWebApplication.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProducerModel");
+                    b.ToTable("Producers");
                 });
 
             modelBuilder.Entity("CinemaMovieWebApplication.Models.Entities.ActorMovieModel", b =>

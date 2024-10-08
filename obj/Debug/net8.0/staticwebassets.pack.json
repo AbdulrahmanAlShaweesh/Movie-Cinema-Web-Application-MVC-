@@ -5,6 +5,66 @@
       "PackagePath": "staticwebassets/CinemaMovieWebApplication.bundle.scp.css"
     },
     {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/CinemagicPalace.jpg",
+      "PackagePath": "staticwebassets/assets/CinemasImages/CinemagicPalace.jpg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/RegalCinemas.webp",
+      "PackagePath": "staticwebassets/assets/CinemasImages/RegalCinemas.webp"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/SilverScreenTheater.png",
+      "PackagePath": "staticwebassets/assets/CinemasImages/SilverScreenTheater.png"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/DarkKnight.jpeg",
+      "PackagePath": "staticwebassets/assets/MovieImages/DarkKnight.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/ForrestGump.jpg",
+      "PackagePath": "staticwebassets/assets/MovieImages/ForrestGump.jpg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/Inception.jpeg",
+      "PackagePath": "staticwebassets/assets/MovieImages/Inception.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/ShawshankRedemption.jpeg",
+      "PackagePath": "staticwebassets/assets/MovieImages/ShawshankRedemption.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/Producer/ChristopherNolan.jpg",
+      "PackagePath": "staticwebassets/assets/Producer/ChristopherNolan.jpg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/Producer/FrankDarabont.jpeg",
+      "PackagePath": "staticwebassets/assets/Producer/FrankDarabont.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/Producer/RobertZemeckis.jpeg",
+      "PackagePath": "staticwebassets/assets/Producer/RobertZemeckis.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/Producer/StevenSpielberg.webp",
+      "PackagePath": "staticwebassets/assets/Producer/StevenSpielberg.webp"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/AngelinaJolie.jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/AngelinaJolie.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/LeonardoDiCaprio.webp",
+      "PackagePath": "staticwebassets/assets/actorsImages/LeonardoDiCaprio.webp"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/RobertDowney.jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/RobertDowney.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/ScarlettJohansson.jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/ScarlettJohansson.jpeg"
+    },
+    {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

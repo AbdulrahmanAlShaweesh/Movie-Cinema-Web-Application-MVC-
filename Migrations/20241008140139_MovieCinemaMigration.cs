@@ -5,7 +5,7 @@
 namespace CinemaMovieWebApplication.Migrations
 {
     /// <inheritdoc />
-    public partial class MovieCinemasMigration : Migration
+    public partial class MovieCinemaMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

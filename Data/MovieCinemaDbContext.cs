@@ -14,12 +14,12 @@ namespace CinemaMovieWebApplication.Data
             
         }
 
-        DbSet<ActorModel> Actors {get; set;}
-        DbSet<CinemaModel> Cinemas {get; set;}
-        DbSet<MovieModel> Movies {get; set;} 
-        DbSet<ProducerModel> Producers {get; set;}
-        DbSet<MovieCinemaModel> MovieCinema {get; set;}
-        DbSet<ActorMovieModel> ActorMovies {get; set;} 
+        public DbSet<ActorModel> Actors {get; set;}
+        public DbSet<CinemaModel> Cinemas {get; set;}
+        public DbSet<MovieModel> Movies {get; set;} 
+        public DbSet<ProducerModel> Producers {get; set;}
+        public DbSet<MovieCinemaModel> MovieCinema {get; set;}
+        public DbSet<ActorMovieModel> ActorMovies {get; set;} 
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
