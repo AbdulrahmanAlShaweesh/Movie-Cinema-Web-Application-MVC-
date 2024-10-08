@@ -22,5 +22,7 @@ namespace CinemaMovieWebApplication.Models.Entities
 
         [Required]
         public int AwardCount {get; set;}
+
+        public ICollection<ActorMovieModel>? ActorsMovies {get; set;}
     }
 }

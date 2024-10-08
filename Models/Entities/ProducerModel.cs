@@ -20,5 +20,7 @@ namespace CinemaMovieWebApplication.Models.Entities
 
         [Required] 
         public string bio {get; set;} = string.Empty;
+
+        public ICollection<MovieModel>? Movies {get; set;}
     }
 }

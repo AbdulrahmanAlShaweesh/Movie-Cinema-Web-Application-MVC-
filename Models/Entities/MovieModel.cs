@@ -33,5 +33,11 @@ namespace CinemaMovieWebApplication.Models.Entities
         public string Director { get; set; } = string.Empty;
 
         public string ProductionCompany { get; set; } = string.Empty;
+        
+        public int ProducerId {get; set;} 
+        public ProducerModel? Producers {get; set;}
+
+        public ICollection<ActorMovieModel>? ActorsMovies {get; set;}
+        public ICollection<MovieCinemaModel>? MoviesCinemas {get; set;}
     }
 }

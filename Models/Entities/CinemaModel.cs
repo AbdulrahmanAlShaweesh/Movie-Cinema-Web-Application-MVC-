@@ -35,5 +35,7 @@ namespace CinemaMovieWebApplication.Models.Entities
         public string Email {get; set;} = string.Empty; 
 
         public List<String>? Facilities {get; set;}    // VIP , 3D , IMA
+
+        public ICollection<MovieCinemaModel>? MoviesCinemas {get; set;}
     }
 }
