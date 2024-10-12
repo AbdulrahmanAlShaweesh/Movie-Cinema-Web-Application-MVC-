@@ -1,0 +1,57 @@
+
+@model List<CinemaMovieWebApplication.Models.Entities.ProducerModel>
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-end mb-4 ">
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-outline-success shadow-sm p-2"><i
+            class="fas fa-file-medical me-2"></i>Add new Producer</a>
+</div>
+
+<div class="row">
+    <div class="col-md-12"> 
+            <table class="table">
+                <thead>
+                    <tr style="border: none;">
+                        <th class="align-middle" style="border: none;">@Html.DisplayNameFor(p => p[0].ProducerProfileImage)</th>
+                        <th class="align-middle" style="border: none; text-align: center;">@Html.DisplayNameFor(p => p[0].ProducerName)</th>
+                        <th class="align-middle" style="border: none; text-align: center">@Html.DisplayNameFor(p => p[0].bio)</th>
+                        <th class="align-middle" style="border: none; text-align: center">Movie Produced</th>
+                        <th class="align-middle" style="border: none; text-align: center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var producer in Model) {
+                        <tr style="border: none; border-bottom: 15px solid transparent; border-top: 0px solid transparent;">
+                            <td class="align-middle" style="border: none;" style="padding-top: 15px; padding-bottom: 20px;">
+                                <img src="@Url.Content(producer.ProducerProfileImage)" class="rounded-circle" alt="@producer.ProducerProfileImage image" style="width: 150px; height: 150px; object-fit: cover;">
+                            </td>
+                            <td class="align-middle" style="vertical-align: middle; padding-top: 15px; padding-bottom: 20px; text-align: center;">@producer.ProducerName</td>
+                            <td class="align-middle" style="vertical-align: middle; padding-top: 15px; padding-bottom: 20px;  text-align: start;">@producer.bio</td>
+                            <td class="align-middle" style="vertical-align: middle; padding-top: 15px; padding-bottom: 20px; text-align: center;">
+                                @if (producer.Movies != null && producer.Movies.Any()) {
+                                    @foreach (var movie in producer.Movies) {
+                                        <span>@movie.Title</span><br/>
+                                    }
+                                } else {
+                                    <span>No movies available</span>
+                                }
+                            </td>
+                            <td style="vertical-align: middle; padding-top: 15px; padding-bottom: 20px;">
+                                <div class="d-flex align-items-center">
+                                    <a class="btn btn-outline-primary d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                        <i class="bi bi-pencil-square me-1"></i> Edit
+                                    </a> 
+                                    <a class="btn btn-outline-info d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                        <i class="bi bi-eye me-1"></i> Details
+                                    </a> 
+                                    <a class="btn btn-outline-danger d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                        <i class="bi bi-trash me-1"></i> Delete
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+    </div>
+</div>

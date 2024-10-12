@@ -18,6 +18,7 @@ namespace CinemaMovieWebApplication.Data
                 // ........ adding inital values to actor table ............//
                 if(!context.Actors.Any()){
                      var actor1 = new ActorModel{
+                       
                             ProfileImage = "~/assets/actorsImages/LeonardoDiCaprio.webp", FullName = "Leonardo DiCaprio", 
                             AwardCount = 2, bio = "Leonardo DiCaprio is an American actor and producer known for his diverse roles and outstanding performances. He gained international fame with Titanic (1997) and has since starred in critically acclaimed films like Inception (2010), The Wolf of Wall Street (2013), and The Revenant (2015), for which he won an Academy Award."
                     };

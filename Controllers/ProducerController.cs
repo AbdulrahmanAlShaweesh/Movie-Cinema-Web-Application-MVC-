@@ -21,9 +21,8 @@ namespace CinemaMovieWebApplication.Controllers
 
         [HttpGet] 
         public async Task<IActionResult> GetAllProducers(){
-            var Producers = await _context.Producers.ToListAsync();
-
-            return View(Producers);
+            var Producers = await _context.Producers.Include(p => p.Movies).ToListAsync();
+                return View(Producers);
         }
     }
 }

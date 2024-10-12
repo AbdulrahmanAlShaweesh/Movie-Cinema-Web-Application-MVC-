@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Actors/GetAllActors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0b3JzL0dldEFsbEFjdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Producer/GetAllProducers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjZXIvR2V0QWxsUHJvZHVjZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Shared/Error.cshtml]

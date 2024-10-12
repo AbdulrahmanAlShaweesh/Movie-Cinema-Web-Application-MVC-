@@ -19,7 +19,7 @@ namespace CinemaMovieWebApplication.Controllers
         }
 
         [HttpGet] 
-        public async Task<IActionResult> GetAll() {
+        public async Task<IActionResult> GetAllActors() {
             var Actors = await _context.Actors.ToListAsync(); 
 
             return View(Actors);
