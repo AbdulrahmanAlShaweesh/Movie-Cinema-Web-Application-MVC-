@@ -20,6 +20,7 @@ namespace CinemaMovieWebApplication.Data
         public DbSet<ProducerModel> Producers {get; set;}
         public DbSet<MovieCinemaModel> MovieCinema {get; set;}
         public DbSet<ActorMovieModel> ActorMovies {get; set;} 
+        public DbSet<ApplicationUser> Users {get; set;} 
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

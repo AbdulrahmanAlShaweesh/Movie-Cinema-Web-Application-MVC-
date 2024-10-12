@@ -135,3 +135,9 @@
 /Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/obj/Debug/net8.0/CinemaMovieWebApplication.pdb
 /Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/obj/Debug/net8.0/CinemaMovieWebApplication.genruntimeconfig.cache
 /Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/obj/Debug/net8.0/ref/CinemaMovieWebApplication.dll
+/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/bin/Debug/net8.0/Microsoft.Extensions.Options.dll

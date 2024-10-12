@@ -1,0 +1,65 @@
+
+@model IEnumerable<CinemaMovieWebApplication.Models.Entities.MovieModel>
+
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           
+            /* Hide the "Add to Cart" div by default */
+            .add-to-cart {
+                opacity: 0;              /* Make it fully transparent */
+                visibility: hidden;      /* Hide it from the layout */
+                transition: opacity 0.5s ease, visibility 0s 0.5s; /* Delay visibility change */
+            }
+            
+
+            /* Show the "Add to Cart" div on hover */
+            .card:hover .add-to-cart {
+                opacity: 1;               
+                visibility: visible;     
+                transition: opacity 0.5s ease, visibility 0s; /* Remove visibility delay on hover */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            @foreach(var movie in Model) {
+            <div class="col-lg-3 col-md-6 col-sm-12 border-primary mb-3">
+                    <div class="card position: relative;">
+                        <img class="card-img-top" src="@Url.Content(movie.MoviePoster)" 
+                        srcset="@Url.Content(movie.MoviePoster) 1024w, @Url.Content(movie.MoviePoster) 768w" 
+                        alt="Movie P" style="height: 250px; width: 100%;">
+                        <div class="add-to-cart" style="position: absolute; height: 30px; top: 220px; left: 0; background-color: #000; color: #fff; width: 100%; text-align: center; "><i class="bi bi-cart me-2"></i>Add to Cart</div>
+                        <i class="bi bi-heart bold-icon" style="font-size: 20px; position: absolute; top: 15px; right: 15px; height: 35px; width:35px; border-radius: 50%; background-color: #fff; display: flex; align-items: center; justify-content: center"></i>
+                        <div class="card-body shadow">
+                            <h5 class="card-title">@movie.Title</h5>
+                            <p title="@movie.Description" class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">@movie.Description</p>
+                            <div class="d-flex align-content-center justify-content-between">
+                                <div class="mt-2">
+                                @for (int i = 1; i <= 5; i++) {
+                                    if (i <= Math.Floor(movie.Rating)) {
+                                        <i class="fas fa-star" style="color: gold;"></i> <!-- Filled star -->
+                                    } else if (i == Math.Ceiling(movie.Rating)) {
+                                        <i class="fas fa-star-half-alt" style="color: gold;"></i> <!-- Half star -->
+                                    } else {
+                                        <i class="far fa-star"></i> <!-- Empty star -->
+                                    }
+                                    }
+                                </div>  
+                                <p style="display:flex; align-items:center; justify-content: center; font-size: 12px; height: 30px; width:55px; border-radius: 10px; background-color: #000; color:#fff;">$@movie.Price</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            }
+        </div>
+    </body>
+</html>
+

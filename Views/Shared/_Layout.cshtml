@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>@ViewData["Title"]</title>
+        <title>@ViewData["Title"] - Cinema Tickets</title>
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
         <link rel="stylesheet" href="~/CinemaMovieWebApplication.styles.css" asp-append-version="true" />
@@ -34,7 +34,7 @@
             <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #1A1A2E;">
 
                 <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-start" href="index.html">
+                <a class="sidebar-brand d-flex align-items-center justify-content-start" asp-action="GetAllActors" asp-controller="Actors">
                     <div class="sidebar-brand-icon rotate-n-15">
                         <i class="fas fa-laugh-wink"></i>
                     </div>
@@ -52,14 +52,14 @@
                 <hr class="sidebar-divider d-none d-md-block">
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMovies"
+                    <a class="nav-link collapsed" data-toggle="collapse" data-target="#collapseMovies"
                         aria-expanded="true" aria-controls="collapseMovies">
                         <i class="bi bi-film"></i>
                         <span>Movies</span>
                     </a>
                     <div id="collapseMovies" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-0 collapse-inner rounded">
-                            <a class="collapse-item" style="margin: 0;">View All Movies</a>
+                            <a class="collapse-item" style="margin: 0;" asp-action="GetAllMovies" asp-controller="Movie">View All Movies</a>
                             <a class="collapse-item" style="margin: 0;" href="buttons.html">Add New Movie</a>
                             <a class="collapse-item" style="margin: 0;" href="cards.html">Manage Movies</a>
                         </div>
@@ -89,7 +89,7 @@
                     </a>
                     <div id="collapseCinema" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-0 collapse-inner rounded">
-                            <a class="collapse-item" style="margin: 0;">View All Cinemas</a>
+                            <a class="collapse-item" style="margin: 0;" asp-action="GetAllCinemas" asp-controller="Cinema">View All Cinemas</a>
                             <a class="collapse-item" style="margin: 0;" href="buttons.html">Add New Cinemas</a>
                             <a class="collapse-item" style="margin: 0;" href="cards.html">Manage Cinemas</a>
                         </div>

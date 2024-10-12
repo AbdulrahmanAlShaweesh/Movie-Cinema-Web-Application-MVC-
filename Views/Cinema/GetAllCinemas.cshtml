@@ -1,0 +1,57 @@
+
+@model List<CinemaMovieWebApplication.Models.Entities.CinemaModel>
+
+@{
+    ViewData["Title"] = "Cinemas";
+}
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-end mb-4 ">
+    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-outline-success shadow-sm p-2"><i
+            class="fas fa-file-medical me-2"></i>Add new Cinema</a>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead>
+                    <tr style="border: none;">
+                        <th class='align-middle' style="border: none;">@Html.DisplayNameFor(c => c[0].Logo)</th>
+                        <th class="align-middle" style="border: none; text-align: center">@Html.DisplayNameFor(c => c[0].Name)</th>
+                        <th class="align-mddile" style="border: none; text-align: center"@Html.DisplayNameFor(c => c[0].Description)></th>
+                        <th class="align-middle" style="border: none; text-align: center;">@Html.DisplayNameFor(c => c[0].Location)</th>
+                        <th class="align-middle" style="border: none; text-align: center">Actions</th>
+                    </tr>
+            </thead>
+            <tbody>
+                @foreach(var cinema in Model) {
+                    <tr style="border-bottom: 15px solid transparent; border-top: 0px solid transparent;">
+                            <td  class="align-middle" style="padding-top: 15px; padding-bottom: 20px;">
+                               @if(cinema.Logo.Contains("~")){
+                                     <img draggable="false" class="rounded-circle" src="@Url.Content(cinema.Logo)" alt="@cinema.Name Logo" style="width: 150px; height: 150px;">
+                               }else {
+                                    <p class="rounded-circle" src="@Url.Content(cinema.Logo)" alt="@cinema.Name Logo" style="width: 150px; height: 150px; background-color: #fff; display: flex; align-items: center; justify-content: center;">@cinema.Logo</p>
+                               }
+                            </td>
+                            <td style="vertical-align: middle; padding-top: 15px; padding-bottom: 20px; text-align: center;">@Html.DisplayFor(modelItem => cinema.Name)</td>
+                            <td class="align-middle" style="padding-top: 15px; padding-bottom: 20px;">@Html.DisplayFor(modelItem => cinema.Description)</td>
+                            <td style="vertical-align: middle; text-align: center; padding-top: 15px; padding-bottom: 20px;">@cinema.Location</td>
+                           <td style="vertical-align: middle; padding-top: 15px; padding-bottom: 20px;"> 
+                                 <div class="d-flex align-items-center" >
+                                    <a class="btn btn-outline-primary d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                        <i class="bi bi-pencil-square me-1"></i> Edit
+                                    </a> 
+                                    <a class="btn btn-outline-info d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                        <i class="bi bi-eye me-1"></i> Details
+                                    </a> 
+                                    <a class="btn btn-outline-danger d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                        <i class="bi bi-trash me-1"></i> Delete
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
