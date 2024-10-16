@@ -6,7 +6,7 @@
 
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-end mb-4 ">
-    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-outline-success shadow-sm p-2"><i
+    <a class="d-none d-sm-inline-block btn btn-sm btn-outline-success shadow-sm p-2" asp-action="CreateActor" asp-controller="Actors"><i
             class="fas fa-file-medical me-2"></i>Add new actor</a>
 </div>
 <div class="row">
@@ -32,13 +32,13 @@
                             <td style="vertical-align: middle; text-align: center; padding-top: 15px; padding-bottom: 20px;">@actor.AwardCount</td>
                            <td style="vertical-align: middle; padding-top: 15px; padding-bottom: 20px;"> 
                                  <div class="d-flex align-items-center" >
-                                    <a class="btn btn-outline-primary d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                    <a asp-action="ActorDetaial" asp-controller="actors" asp-route-id="@actor.Id" class="btn btn-outline-primary d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
                                         <i class="bi bi-pencil-square me-1"></i> Edit
                                     </a> 
-                                    <a class="btn btn-outline-info d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                    <a asp-action="ActorDetaial" asp-controller="actors" asp-route-id="@actor.Id" class="btn btn-outline-info d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
                                         <i class="bi bi-eye me-1"></i> Details
                                     </a> 
-                                    <a class="btn btn-outline-danger d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
+                                    <a asp-action="ActorDetaial" asp-controller="actors" asp-route-id="@actor.Id" class="btn btn-outline-danger d-flex align-items-center justify-content-center mx-1" style="max-width: 80px;"> 
                                         <i class="bi bi-trash me-1"></i> Delete
                                     </a>
                                 </div>

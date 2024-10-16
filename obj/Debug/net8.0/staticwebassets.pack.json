@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/CinemaMovieWebApplication.bundle.scp.css"
     },
     {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/Actors/20241016212621135.jpeg",
+      "PackagePath": "staticwebassets/Actors/20241016212621135.jpeg"
+    },
+    {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/Themes/css/sb-admin-2.css",
       "PackagePath": "staticwebassets/Themes/css/sb-admin-2.css"
     },
@@ -7473,6 +7477,14 @@
       "PackagePath": "staticwebassets/assets/actorsImages/AngelinaJolie.jpeg"
     },
     {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/EmmaWatson.jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/EmmaWatson.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/EmmaWatson.jpg",
+      "PackagePath": "staticwebassets/assets/actorsImages/EmmaWatson.jpg"
+    },
+    {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/LeonardoDiCaprio.webp",
       "PackagePath": "staticwebassets/assets/actorsImages/LeonardoDiCaprio.webp"
     },
@@ -7487,6 +7499,10 @@
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/ScarlettJohansson.jpeg",
       "PackagePath": "staticwebassets/assets/actorsImages/ScarlettJohansson.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/ohnDoe  .jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/ohnDoe  .jpeg"
     },
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/css/site.css",

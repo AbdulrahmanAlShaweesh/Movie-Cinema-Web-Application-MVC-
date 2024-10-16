@@ -1,4 +1,6 @@
 using CinemaMovieWebApplication.Data;
+using CinemaMovieWebApplication.Data.Services;
+using CinemaMovieWebApplication.Data.Services.Service;
 using CinemaMovieWebApplication.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +17,11 @@ builder.Services.AddDbContext<MovieCinemaDbContext>(options => {
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<MovieCinemaDbContext>()
     .AddDefaultTokenProviders();
+
+// Adding validtion 
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation().AddDataAnnotationsLocalization().AddViewLocalization();
+
+builder.Services.AddScoped<IActorRepository, ActorService>();
 
 var app = builder.Build();
 

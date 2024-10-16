@@ -14,9 +14,21 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = /Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication
 build_property._RazorSourceGeneratorDebug = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Actors/ActorDetaial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0b3JzL0FjdG9yRGV0YWlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Actors/CreateActor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0b3JzL0NyZWF0ZUFjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Actors/Empty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0b3JzL0VtcHR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Actors/GetAllActors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0b3JzL0dldEFsbEFjdG9ycy5jc2h0bWw=
@@ -28,14 +40,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Cinema/GetAllCinemas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2luZW1hL0dldEFsbENpbmVtYXMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Movie/GetAllMovies.cshtml]

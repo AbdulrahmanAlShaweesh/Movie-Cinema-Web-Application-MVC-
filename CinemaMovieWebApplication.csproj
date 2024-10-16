@@ -12,5 +12,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8"/>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.8"/>
   </ItemGroup>
 </Project>
