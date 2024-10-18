@@ -7485,8 +7485,20 @@
       "PackagePath": "staticwebassets/assets/actorsImages/EmmaWatson.jpg"
     },
     {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/LeonardoDiCaprio.jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/LeonardoDiCaprio.jpeg"
+    },
+    {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/LeonardoDiCaprio.webp",
       "PackagePath": "staticwebassets/assets/actorsImages/LeonardoDiCaprio.webp"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/MeryStreep.jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/MeryStreep.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/MerylStreep.jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/MerylStreep.jpeg"
     },
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/MerylStreep.webp",
@@ -7495,6 +7507,10 @@
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/RobertDowney.jpeg",
       "PackagePath": "staticwebassets/assets/actorsImages/RobertDowney.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/RobertDowneyJr.jpeg",
+      "PackagePath": "staticwebassets/assets/actorsImages/RobertDowneyJr.jpeg"
     },
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/ScarlettJohansson.jpeg",

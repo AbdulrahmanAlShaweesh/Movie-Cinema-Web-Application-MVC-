@@ -1,0 +1,53 @@
+@model CinemaMovieWebApplication.Data.viewModel.ActorViewModel
+
+@{
+    ViewData["Title"] = "Update Actor";
+}
+
+<div class="row text">
+    <div class="col-md-10 col-sm-12 mx-md-5">
+        <p class="mt-5">
+            <h1 style="color:#000; font-size:30px; margin-bottom: 28px; font-family: 'Lora', serif;">Update Actor</h1>
+        </p>
+
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                @if (Model.ExistingImage != null)
+                {
+                    <img src="@Model.ExistingImage" alt="Profile Image" width="150" />
+                }
+
+                <div class="mb-3">
+                    <label asp-for="ProfileImage" class="form-label"></label>
+                    <input asp-for="ProfileImage" class="form-control" type="file" />
+                </div>
+                <span asp-validation-for="ProfileImage" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Bio" class="control-label"></label>
+                <input asp-for="Bio" class="form-control" />
+                <span asp-validation-for="Bio" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AwardCount" class="control-label"></label>
+                <input asp-for="AwardCount" class="form-control" />
+                <span asp-validation-for="AwardCount" class="text-danger"></span>
+            </div>
+
+            <div class="my-3">
+                <input type="submit" class="btn btn-outline-primary" value="Submit" />
+                <a class="btn btn-outline-secondary" asp-action="GetAllActors">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8gojHUcBdihXwC/X4t1a9yLkxL5upUNLoj4NHbFk2YE=",
+  "Hash": "ZEqhsPSkyfvaciyz/SFQK0D8qMU47sT5NxwFQRO9n8A=",
   "Source": "CinemaMovieWebApplication",
   "BasePath": "_content/CinemaMovieWebApplication",
   "Mode": "Default",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot/assets/actorsImages/EmmaWatson.jpg"
     },
     {
+      "Identity": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/LeonardoDiCaprio.jpeg",
+      "SourceId": "CinemaMovieWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/",
+      "BasePath": "_content/CinemaMovieWebApplication",
+      "RelativePath": "assets/actorsImages/LeonardoDiCaprio.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/actorsImages/LeonardoDiCaprio.jpeg"
+    },
+    {
       "Identity": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/LeonardoDiCaprio.webp",
       "SourceId": "CinemaMovieWebApplication",
       "SourceType": "Discovered",
@@ -150,6 +169,25 @@
       "OriginalItemSpec": "wwwroot/assets/actorsImages/LeonardoDiCaprio.webp"
     },
     {
+      "Identity": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/MerylStreep.jpeg",
+      "SourceId": "CinemaMovieWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/",
+      "BasePath": "_content/CinemaMovieWebApplication",
+      "RelativePath": "assets/actorsImages/MerylStreep.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/actorsImages/MerylStreep.jpeg"
+    },
+    {
       "Identity": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/MerylStreep.webp",
       "SourceId": "CinemaMovieWebApplication",
       "SourceType": "Discovered",
@@ -167,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/actorsImages/MerylStreep.webp"
+    },
+    {
+      "Identity": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/MeryStreep.jpeg",
+      "SourceId": "CinemaMovieWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/",
+      "BasePath": "_content/CinemaMovieWebApplication",
+      "RelativePath": "assets/actorsImages/MeryStreep.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/actorsImages/MeryStreep.jpeg"
     },
     {
       "Identity": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/ohnDoe  .jpeg",
@@ -205,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/actorsImages/RobertDowney.jpeg"
+    },
+    {
+      "Identity": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/RobertDowneyJr.jpeg",
+      "SourceId": "CinemaMovieWebApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/",
+      "BasePath": "_content/CinemaMovieWebApplication",
+      "RelativePath": "assets/actorsImages/RobertDowneyJr.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/actorsImages/RobertDowneyJr.jpeg"
     },
     {
       "Identity": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/actorsImages/ScarlettJohansson.jpeg",

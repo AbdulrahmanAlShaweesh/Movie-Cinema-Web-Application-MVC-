@@ -13,83 +13,162 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace CinemaMovieWebApplication.Controllers
 {
-    public class ActorsController : Controller
+     public class ActorsController : Controller
     {
-        private readonly IActorRepository _service; 
+        private readonly IActorRepository _service;
         private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public ActorsController(IActorRepository servcies, IWebHostEnvironment webHostEnvironment)
+        public ActorsController(IActorRepository service, IWebHostEnvironment webHostEnvironment)
         {
-            _service = servcies;
+            _service = service;
             _webHostEnvironment = webHostEnvironment;
         }
 
-        [HttpGet] 
-        public async Task<IActionResult> GetAllActors() {
-            var Actors = await _service.GetAllAsync(); 
-
-            return View(Actors);
-        } // crud
-
-        // [HttpGet]
-        public async Task<IActionResult> ActorDetaial(int id){
-            // check if the actor already in the db. 
-            var actorDetials = await _service.GetByIdAsync(id); 
-            
-            if(actorDetials == null) {
-                return View("Empty");
-            }
-
-            return View(actorDetials);
-        }
-
-        public IActionResult Empty(){
-            return View();
+        [HttpGet]
+        public async Task<IActionResult> GetAllActors()
+        {
+            var actors = await _service.GetAllAysnc();
+            return View(actors);
         }
 
         [HttpGet]
-        public  IActionResult CreateActor(){
+        public IActionResult CreateActor()
+        {
             return View();
         }
-      
+
         [HttpPost]
         public async Task<IActionResult> CreateActor(CreateViewModel viewModel)
         {
             if (!ModelState.IsValid)
             {
-                return View(viewModel);  // Return to the view with validation errors
+                return View(viewModel);  // Return the form with validation errors
             }
 
-            // Define the target folder path
-            string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "assets/actorsImages");
-            
-            // Ensure the directory exists
-            if (!Directory.Exists(uploadDir))
+            // Handle image upload if there's a file
+            string profileImagePath = string.Empty;
+            if (viewModel.ProfileImage != null)
             {
-                Directory.CreateDirectory(uploadDir);
+                string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "assets/actorsImages");
+                string fileName = $"{viewModel.FullName.Replace(" ", "")}.jpeg";
+                string imageFullPath = Path.Combine(uploadDir, fileName);
+
+                if (!Directory.Exists(uploadDir))
+                {
+                    Directory.CreateDirectory(uploadDir);
+                }
+
+                using (var stream = new FileStream(imageFullPath, FileMode.Create))
+                {
+                    await viewModel.ProfileImage.CopyToAsync(stream);
+                }
+
+                profileImagePath = $"/assets/actorsImages/{fileName}";
             }
 
-            // Create a unique filename using the actor's name or another relevant identifier
-            string fileName = $"{viewModel.FullName.Replace(" ", "")}.jpeg"; // Modify the naming convention as needed
-            string imageFullPath = Path.Combine(uploadDir, fileName);
-
-            // Save the file asynchronously
-            using (var stream = new FileStream(imageFullPath, FileMode.Create))
-            {
-                await viewModel.ProfileImage!.CopyToAsync(stream);
-            }
-
-            // Save the relative path to the database
-            var actor = new ActorModel()
+            var actor = new ActorModel
             {
                 FullName = viewModel.FullName,
                 bio = viewModel.bio,
-                ProfileImage = $"/assets/actorsImages/{fileName}", // Save as a relative URL
                 AwardCount = viewModel.AwardCount,
+                ProfileImage = profileImagePath // Save relative path of the image
             };
 
-            await _service.CreateActorAsync(actor);
-            return RedirectToAction("GetAllActors");
+            await _service.CreateAsync(actor);
+            return RedirectToAction(nameof(GetAllActors));
         }
+
+        [HttpGet]   
+        public async Task<IActionResult> Edit(int id)
+        {
+            var actor = await _service.GetByIdAsync(id);
+            if (actor == null) return View("Empty");
+
+            var actorViewModel = new ActorViewModel
+            {
+                Id = actor.Id,
+                FullName = actor.FullName,
+                Bio = actor.bio,
+                AwardCount = actor.AwardCount,
+                ExistingImage = actor.ProfileImage
+            };
+
+            return View(actorViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, ActorViewModel actorViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(actorViewModel);
+            }
+
+            var actor = await _service.GetByIdAsync(id);
+            if (actor == null) return View("Empty");
+
+            if (actorViewModel.ProfileImage != null)
+            {
+                // Handle image upload
+                string uploadDir = Path.Combine(_webHostEnvironment.WebRootPath, "assets/actorsImages");
+                string fileName = $"{actorViewModel.FullName.Replace(" ", "")}.jpeg";
+                string imageFullPath = Path.Combine(uploadDir, fileName);
+
+                using (var stream = new FileStream(imageFullPath, FileMode.Create))
+                {
+                    await actorViewModel.ProfileImage.CopyToAsync(stream);
+                }
+
+                actor.ProfileImage = $"/assets/actorsImages/{fileName}";
+            }
+
+            actor.FullName = actorViewModel.FullName;
+            actor.bio = actorViewModel.Bio;
+            actor.AwardCount = actorViewModel.AwardCount;
+
+            await _service.UpdateAsync(id, actor);
+
+            return RedirectToAction(nameof(GetAllActors));
+        }
+    
+        [HttpGet]
+        public async Task<IActionResult> ActorDetaial(int id)
+        {
+            // Retrieve actor details from the service
+            var actorDetails = await _service.GetByIdAsync(id);
+
+            // Check if the actor exists
+            if (actorDetails == null)
+            {
+                return View("Empty");
+            }
+
+            return View(actorDetails); // Pass the actor details to the view
+        }
+        
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken] // This attribute is good for security
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await  _service.DeleteAsync(id);
+            if (!result)
+            {
+                return NotFound(); // Return 404 if not found
+            }
+            return RedirectToAction("GetAllActors"); // Redirect back to the actor list
+        }
+
+        public IActionResult Empty(){
+            return View();
+        }
+    
     }
+
 }
+
+
+
+
+ 

@@ -33,7 +33,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-MovieCinemaInitlize.Seeding(app.Services);
+// MovieCinemaInitlize.Seeding(app.Services);
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
