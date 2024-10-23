@@ -16,6 +16,16 @@
                 _context = context;
             }
 
+            /*
+                public class EnitityBaseRepoistory<T> : IEntityBaseRepository<T> where T : class, IEntity, new() {
+                    private readonly ApplicationDbContext _context; 
+
+                    pub EnitityBaseRepository(ApplicationDbContext context) {
+                        _context = context;
+                    }
+                }
+            */
+
             public async Task CreateAsync(T Entity) {
                 await _context.Set<T>().AddAsync(Entity);
                 await _context.SaveChangesAsync();
@@ -43,22 +53,22 @@
                 //set the state of the entity
                 entityEntry.State =  EntityState.Modified;
 
-                await _context.SaveChangesAsync();
-            }
+            await _context.SaveChangesAsync();
+        }
 
-            
-            public async Task<bool> DeleteActorAsync(int id)
-            {
-                var actor = await _context.Actors.FindAsync(id);
-                if (actor == null) return false;
+        
+        public async Task<bool> DeleteActorAsync(int id)
+        {
+            var actor = await _context.Actors.FindAsync(id);
+            if (actor == null) return false;
 
-                _context.Actors.Remove(actor);
-                await _context.SaveChangesAsync();
-                return true; // Return true if deletion was successful
-            }
-
+            _context.Actors.Remove(actor);
+            await _context.SaveChangesAsync();
+            return true; // Return true if deletion was successful
         }
     }
+}
+
 
 
 

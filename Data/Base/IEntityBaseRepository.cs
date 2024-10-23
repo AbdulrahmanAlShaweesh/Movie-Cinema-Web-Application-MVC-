@@ -14,3 +14,10 @@ namespace CinemaMovieWebApplication.Data.Base
         Task<bool> DeleteAsync(int id);  
     }
 }
+
+
+/*
+    public interface IEntityBaseRepository<T> where T : class, IEnityBase, new() {
+        Task<T> 
+    }
+*/

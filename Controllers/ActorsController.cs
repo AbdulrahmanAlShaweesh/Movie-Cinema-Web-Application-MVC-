@@ -160,12 +160,11 @@ namespace CinemaMovieWebApplication.Controllers
             return RedirectToAction("GetAllActors"); // Redirect back to the actor list
         }
 
-        public IActionResult Empty(){
+        public new IActionResult Empty(){
             return View();
         }
     
     }
-
 }
 
 

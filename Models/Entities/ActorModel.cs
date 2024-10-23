@@ -7,7 +7,7 @@ using CinemaMovieWebApplication.Data.Base;
 
 namespace CinemaMovieWebApplication.Models.Entities
 {
-    public class ActorModel : IEntityBase
+    public class ActorModel : IEntityBase  // inherit IEntityBase 
     {
         public int Id {get; set;} 
 
