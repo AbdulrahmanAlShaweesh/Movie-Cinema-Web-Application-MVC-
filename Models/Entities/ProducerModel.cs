@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using CinemaMovieWebApplication.Data.Base;
 
 namespace CinemaMovieWebApplication.Models.Entities
 {
-    public class ProducerModel
+    public class ProducerModel : IEntityBase
     {
         [Key] 
         public int Id {get; set;} 

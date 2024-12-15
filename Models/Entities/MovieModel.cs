@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using CinemaMovieWebApplication.Data.Base;
 using CinemaMovieWebApplication.Models.Enums;
 
 namespace CinemaMovieWebApplication.Models.Entities
 {
-    public class MovieModel
+    public class MovieModel : IEntityBase
     {
         public int Id { get; set; }
 

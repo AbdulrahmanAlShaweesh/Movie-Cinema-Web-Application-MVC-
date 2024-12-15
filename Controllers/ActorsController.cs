@@ -21,24 +21,23 @@ namespace CinemaMovieWebApplication.Controllers
         public ActorsController(IActorRepository service, IWebHostEnvironment webHostEnvironment)
         {
             _service = service;
-            _webHostEnvironment = webHostEnvironment;
+            _webHostEnvironment = webHostEnvironment;  
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllActors()
-        {
-            var actors = await _service.GetAllAysnc();
+         public async Task<IActionResult> GetAllActors() {
+            var actors = await _service.GetAllAysnc() ;
+
             return View(actors);
-        }
+         }
 
-        [HttpGet]
-        public IActionResult CreateActor()
-        {
-            return View();
-        }
+          [HttpGet]
+         public  IActionResult CreateActor(){
+            return   View();
+         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateActor(CreateViewModel viewModel)
+              public async Task<IActionResult> CreateActor(CreateViewModel viewModel)
         {
             if (!ModelState.IsValid)
             {
@@ -77,7 +76,6 @@ namespace CinemaMovieWebApplication.Controllers
             await _service.CreateAsync(actor);
             return RedirectToAction(nameof(GetAllActors));
         }
-
         [HttpGet]   
         public async Task<IActionResult> Edit(int id)
         {
@@ -145,8 +143,6 @@ namespace CinemaMovieWebApplication.Controllers
 
             return View(actorDetails); // Pass the actor details to the view
         }
-        
-
 
         [HttpPost]
         [ValidateAntiForgeryToken] // This attribute is good for security
@@ -169,5 +165,3 @@ namespace CinemaMovieWebApplication.Controllers
 
 
 
-
- 

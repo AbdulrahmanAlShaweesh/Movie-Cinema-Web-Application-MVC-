@@ -42,16 +42,60 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXZpYWJsZU1vdmllcy9HZXRBbGxNb3ZpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Cinema/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2luZW1hL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Cinema/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2luZW1hL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Cinema/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2luZW1hL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Cinema/Empty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2luZW1hL0VtcHR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Cinema/GetAllCinemas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2luZW1hL0dldEFsbENpbmVtYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Movie/GetAllMovies.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvR2V0QWxsTW92aWVzLmNzaHRtbA==
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Movie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Producer/GetAllProducers.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjZXIvR2V0QWxsUHJvZHVjZXJzLmNzaHRtbA==
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Movie/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Movie/Empty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvRW1wdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Movie/Read.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvUmVhZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Producer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjZXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Producer/Detials.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjZXIvRGV0aWFscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Producer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjZXIvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Producer/Empty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjZXIvRW1wdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Producer/Read.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjZXIvUmVhZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/Views/Shared/Error.cshtml]

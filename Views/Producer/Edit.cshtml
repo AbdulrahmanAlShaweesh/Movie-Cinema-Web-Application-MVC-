@@ -1,0 +1,47 @@
+@model CinemaMovieWebApplication.Data.viewModel.UpdateProducerViewModel
+
+@{
+    ViewData["Title"] = "Update Actor";
+}
+
+<div class="row text">
+    <div class="col-md-10 col-sm-12 mx-md-5">
+        <p class="mt-5">
+            <h1 style="color:#000; font-size:30px; margin-bottom: 28px; font-family: 'Lora', serif;">Update Actor</h1>
+        </p>
+
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                @if (Model.ExistingImage != null)
+                {
+                    <img src="@Model.ExistingImage" alt="Profile Image" width="150" />
+                }
+
+                <div class="mb-3">
+                    <label asp-for="ProducerProfileImage" class="form-label"></label>
+                    <input asp-for="ProducerProfileImage" class="form-control" type="file" />
+                </div>
+                <span asp-validation-for="ProducerProfileImage" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProducerName" class="control-label"></label>
+                <input asp-for="ProducerName" class="form-control" />
+                <span asp-validation-for="ProducerName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="bio" class="control-label"></label>
+                <input asp-for="bio" class="form-control" />
+                <span asp-validation-for="bio" class="text-danger"></span>
+            </div>
+
+            <div class="my-3">
+                <input type="submit" class="btn btn-outline-primary" value="Submit" />
+                <a class="btn btn-outline-secondary" asp-action="Read">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

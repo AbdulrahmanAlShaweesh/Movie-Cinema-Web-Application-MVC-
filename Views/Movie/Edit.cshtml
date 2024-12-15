@@ -1,0 +1,101 @@
+@model CinemaMovieWebApplication.Data.viewModel.CreateMovieVeiwModel
+
+@{
+    ViewData["Title"] = "Update Movie";
+}
+
+<div class="row text">
+    <div class="col-md-10 col-sm-12 mx-md-5">
+        <p class="mt-5">
+            <h1 style="color:#000; font-size:30px; margin-bottom: 28px; font-family: 'Lora', serif;">Update Actor</h1>
+        </p>
+
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                @if (Model?.ExistingImage != null)
+                {
+                    <img src="@Model.ExistingImage" alt="Cinema Logo" width="150" />
+                }
+
+                <div class="mb-3">
+                    <label asp-for="MoviePoster" class="form-label"></label>
+                    <input asp-for="MoviePoster" class="form-control" type="file" />
+                </div>
+                <span asp-validation-for="MoviePoster" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MovieUrl" class="control-label"></label>
+                <input asp-for="MovieUrl" class="form-control" />
+                <span asp-validation-for="MovieUrl" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Duration" class="control-label"></label>
+                <input asp-for="Duration" class="form-control" />
+                <span asp-validation-for="Duration" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ReleaseDate" class="control-label"></label>
+                <input asp-for="ReleaseDate" class="form-control" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MovieTypes" class="control-label"></label>
+                <input asp-for="MovieTypes" class="form-control" />
+                <span asp-validation-for="MovieTypes" class="text-danger"></span>
+            </div>
+
+             <div class="form-group">
+                <label asp-for="Language" class="control-label"></label>
+                <input asp-for="Language" class="form-control" />
+                <span asp-validation-for="Language" class="text-danger"></span>
+            </div>
+
+             <div class="form-group">
+                <label asp-for="Director" class="control-label"></label>
+                <input asp-for="Director" class="form-control" />
+                <span asp-validation-for="Director" class="text-danger"></span>
+            </div>
+
+             <div class="form-group">
+                <label asp-for="ProductionCompany" class="control-label"></label>
+                <input asp-for="ProductionCompany" class="form-control" />
+                <span asp-validation-for="ProductionCompany" class="text-danger"></span>
+            </div>
+
+            <div class="my-3">
+                <input type="submit" class="btn btn-outline-primary" value="Submit" />
+                <a class="btn btn-outline-secondary" asp-action="GetAllCinemas">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

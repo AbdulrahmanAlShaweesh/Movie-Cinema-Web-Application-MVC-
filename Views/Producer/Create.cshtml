@@ -1,0 +1,54 @@
+@model CinemaMovieWebApplication.Data.viewModel.CreateProducerViewModel
+
+@{
+    ViewData["Title"] = "Create Producer";
+}
+
+<div class="row text">
+    <div class="col-sm-12 px-md-5">
+        <p class="mt-5">
+            <h1 style="color:#000; font-size:30px; margin-bottom: 28px; font-family: 'Lora', serif;">Add a new actor</h1>
+        </p>
+
+        <form asp-action="Create" method="post" enctype="multipart/form-data"> 
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="row mb-3">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <div class="mb-3">
+                            <label asp-for="ProducerProfileImage" class="form-label" style="font-family: 'Lora', serif;"></label>
+                            <input asp-for="ProducerProfileImage" class="form-control" type="file" id="formFile">
+                        </div>
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="ProducerProfileImage" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="ProducerName" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="ProducerName" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="ProducerName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="bio" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="bio" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="bio" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-3 ">
+                 <input type="submit" class="btn btn-outline-primary" value="Submit" />
+                <a class="btn btn-outline-secondary" asp-action="Read">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+ 

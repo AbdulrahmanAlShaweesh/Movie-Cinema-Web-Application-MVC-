@@ -1,5 +1,6 @@
 using CinemaMovieWebApplication.Data;
 using CinemaMovieWebApplication.Data.Services;
+using CinemaMovieWebApplication.Data.Services.Interfaces;
 using CinemaMovieWebApplication.Data.Services.Service;
 using CinemaMovieWebApplication.Models.Entities;
 using Microsoft.AspNetCore.Identity;
@@ -22,6 +23,9 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation().AddDataAnnotationsLocalization().AddViewLocalization();
 
 builder.Services.AddScoped<IActorRepository, ActorService>();
+builder.Services.AddScoped<ICinemaRepository, CinemaServices>();
+builder.Services.AddScoped<IMovieRepository, MovieServices>();
+builder.Services.AddScoped<IProducerServices, ProducerServices>();
 
 var app = builder.Build();
 

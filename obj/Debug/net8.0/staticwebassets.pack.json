@@ -7429,16 +7429,36 @@
       "PackagePath": "staticwebassets/Themes/vendor/jquery/jquery.slim.min.map"
     },
     {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/CinemagicPalace.jpeg",
+      "PackagePath": "staticwebassets/assets/CinemasImages/CinemagicPalace.jpeg"
+    },
+    {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/CinemagicPalace.jpg",
       "PackagePath": "staticwebassets/assets/CinemasImages/CinemagicPalace.jpg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/RegalCinemas.jpeg",
+      "PackagePath": "staticwebassets/assets/CinemasImages/RegalCinemas.jpeg"
     },
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/RegalCinemas.webp",
       "PackagePath": "staticwebassets/assets/CinemasImages/RegalCinemas.webp"
     },
     {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/SilverScreen.jpeg",
+      "PackagePath": "staticwebassets/assets/CinemasImages/SilverScreen.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/SilverScreenTheater.jpeg",
+      "PackagePath": "staticwebassets/assets/CinemasImages/SilverScreenTheater.jpeg"
+    },
+    {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/CinemasImages/SilverScreenTheater.png",
       "PackagePath": "staticwebassets/assets/CinemasImages/SilverScreenTheater.png"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/DarkKinght.jpeg",
+      "PackagePath": "staticwebassets/assets/MovieImages/DarkKinght.jpeg"
     },
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/DarkKnight.jpeg",
@@ -7455,6 +7475,26 @@
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/ShawshankRedemption.jpeg",
       "PackagePath": "staticwebassets/assets/MovieImages/ShawshankRedemption.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/aasdasdasdasd.jpeg",
+      "PackagePath": "staticwebassets/assets/MovieImages/aasdasdasdasd.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/as333232.jpeg",
+      "PackagePath": "staticwebassets/assets/MovieImages/as333232.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/MovieImages/asasdasd.jpeg",
+      "PackagePath": "staticwebassets/assets/MovieImages/asasdasd.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/Producer/ChristopherNolan\t.jpeg",
+      "PackagePath": "staticwebassets/assets/Producer/ChristopherNolan\t.jpeg"
+    },
+    {
+      "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/Producer/ChristopherNolan.jpeg",
+      "PackagePath": "staticwebassets/assets/Producer/ChristopherNolan.jpeg"
     },
     {
       "Id": "/Users/alshwishabdulrahman/Documents/FullStock/BackEnd/MVCProjects/CinemaMovieWebApplication/wwwroot/assets/Producer/ChristopherNolan.jpg",

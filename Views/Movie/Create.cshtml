@@ -1,0 +1,146 @@
+@model CinemaMovieWebApplication.Data.viewModel.CreateMovieVeiwModel
+
+@{
+    ViewData["Title"] = "Create Movie";
+}
+
+<div class="row text">
+    <div class="col-sm-12 px-md-5">
+        <p class="mt-5">
+            <h1 style="color:#000; font-size:30px; margin-bottom: 28px; font-family: 'Lora', serif;">Add a new Movie</h1>
+        </p>
+
+        <form asp-action="Create" method="post" enctype="multipart/form-data"> 
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Movie Poster Upload -->
+            <div class="row mb-3">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="MoviePoster" class="form-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="MoviePoster" class="form-control" type="file" id="formFile">
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="MoviePoster" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="Title" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="Title" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description, Price, Movie URL, Rating -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="Description" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="Price" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="MovieUrl" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="MovieUrl" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="MovieUrl" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="Rating" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="Rating" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="Rating" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Duration, Release Date -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="Duration" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="Duration" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="Duration" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="ReleaseDate" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="ReleaseDate" class="form-control px-3" type="date" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="ReleaseDate" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie Types, Language, Director, Production Company -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="MovieTypes" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="MovieTypes" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="MovieTypes" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="Language" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="Language" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="Language" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="Director" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="Director" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="Director" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="ProductionCompany" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <input asp-for="ProductionCompany" class="form-control px-3" />
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="ProductionCompany" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producer Selection -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-group">
+                        <label asp-for="ProducerId" class="control-label" style="font-family: 'Lora', serif;"></label>
+                        <select asp-for="ProducerId" class="form-control" asp-items="ViewBag.Producers"></select>
+                        <span style="font-size: 13px; font-family: 'Lora', serif;" asp-validation-for="ProducerId" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-3 ">
+                <input type="submit" class="btn btn-outline-primary" value="Submit" />
+                <a class="btn btn-outline-secondary" asp-action="Read">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
